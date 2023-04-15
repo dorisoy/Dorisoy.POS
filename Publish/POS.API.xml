@@ -1,0 +1,1749 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>POS.API</name>
+    </assembly>
+    <members>
+        <member name="T:POS.API.Controllers.ActionController">
+            <summary>
+            Action
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.ActionController.#ctor(MediatR.IMediator)">
+            <summary>
+            Action
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:POS.API.Controllers.ActionController.GetAction(System.Guid)">
+            <summary>
+            Get Action By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ActionController.GetActions">
+            <summary>
+            Get All Actions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ActionController.AddAction(POS.MediatR.CommandAndQuery.AddActionCommand)">
+            <summary>
+            Create A Action
+            </summary>
+            <param name="addActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ActionController.UpdateAction(System.Guid,POS.MediatR.CommandAndQuery.UpdateActionCommand)">
+            <summary>
+            Update Exist Action By Id
+            </summary>
+            <param name="Id"></param>
+            <param name="updateActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ActionController.DeleteAction(System.Guid)">
+            <summary>
+            Delete Action By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Authentication.AuthenticationController.Login(POS.MediatR.CommandAndQuery.UserLoginCommand)">
+            <summary>
+            User Login
+            </summary>
+            <param name="userLoginCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Brand.BrandController.GetBrand(System.Guid)">
+            <summary>
+            Get Brand.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Brand.BrandController.GetBrands">
+            <summary>
+            Get Brands.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Brand.BrandController.AddBrand(POS.MediatR.Brand.Command.AddBrandCommand)">
+            <summary>
+            Create Brand.
+            </summary>
+            <param name="addBrandCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Brand.BrandController.UpdateBrand(System.Guid,POS.MediatR.Brand.Command.UpdateBrandCommand)">
+            <summary>
+            Update Brand.
+            </summary>
+            <param name="Id"></param>
+            <param name="updateBrandCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Brand.BrandController.DeleteBrand(System.Guid)">
+            <summary>
+            Delete Brand.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.City.CityController.GetCitiesByName(System.String,System.String)">
+            <summary>
+            Gets the cities.
+            </summary>
+            <param name="countryName">Name of the country.</param>
+            <param name="cityName">Name of the city.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.City.CityController.GetCities(POS.Data.Resources.CityResource)">
+            <summary>
+            Get All Cities
+            </summary>
+            <param name="cityResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.City.CityController.AddCity(POS.MediatR.City.Commands.AddCityCommand)">
+            <summary>
+            Add City
+            </summary>
+            <param name="addCityCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.City.CityController.UpdateCity(System.Guid,POS.MediatR.City.Commands.UpdateCityCommand)">
+            <summary>
+            Update City By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateCityCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.City.CityController.DeleteCity(System.Guid)">
+            <summary>
+            Delete City By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.CompanyProfile.CompanyProfileController.#ctor(MediatR.IMediator)">
+            <summary>
+            Action
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:POS.API.Controllers.CompanyProfile.CompanyProfileController.GetCompanyProfile">
+            <summary>
+            Get CompanyProfile
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.CompanyProfile.CompanyProfileController.UpdateCompanyProfile(POS.MediatR.CommandAndQuery.UpdateCompanyProfileCommand)">
+            <summary>
+            Update Company Profile
+            </summary>
+            <param name="updateCompanyProfileCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ContactUs.ContactUsController.Create(POS.MediatR.CommandAndQuery.AddContactUsCommand)">
+            <summary>
+            Creates the specified add contact us.
+            </summary>
+            <param name="addContactUsCommand">The add contact us command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Country.CountryController.GetCountry(System.Guid)">
+            <summary>
+            Get Country.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Country.CountryController.GetCountries">
+            <summary>
+            Get Country.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Country.CountryController.AddCountry(POS.MediatR.Country.Commands.AddCountryCommand)">
+            <summary>
+            Create Country.
+            </summary>
+            <param name="addCountryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Country.CountryController.UpdateCountry(System.Guid,POS.MediatR.Country.Commands.UpdateCountryCommand)">
+            <summary>
+            Update Country.
+            </summary>
+            <param name="Id"></param>
+            <param name="updateCountryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Country.CountryController.DeleteCountry(System.Guid)">
+            <summary>
+            Delete Country.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Currency.CurrencyController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:POS.API.Controllers.Currency.CurrencyController.GetCurrencies">
+            <summary>
+            Get All Currencies.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.GetCustomers(POS.Data.CustomerResource)">
+            <summary>
+            Gets the customers.
+            </summary>
+            <param name="customerResource">The customer resource.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.GetCustomer(System.Guid)">
+            <summary>
+            Gets the customer.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.CreateCustomer(POS.MediatR.CommandAndQuery.AddCustomerCommand)">
+            <summary>
+            Creates the customer.
+            </summary>
+            <param name="addCustomerCommand">The add customer command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.UpdateCustomer(System.Guid,POS.MediatR.CommandAndQuery.UpdateCustomerCommand)">
+            <summary>
+            Updates the customer.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="updateCustomerCommand">The update customer command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.DeleteCustomer(System.Guid)">
+            <summary>
+            Delete Customer By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.EmailOrPhoneExist(System.Guid,System.String,System.String)">
+            <summary>
+            Check Email for Phone Exists.
+            </summary>
+            <param name="id"></param>
+            <param name="email"></param>
+            <param name="mobileNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.GetCustomerPayment(POS.Data.CustomerResource)">
+            <summary>
+            Get Customer Payment Report
+            </summary>
+            <param name="customerResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.GetCustomerPaymentReport(POS.Data.CustomerResource)">
+            <summary>
+            Get Customer Payment Report
+            </summary>
+            <param name="customerResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Customer.CustomerController.GetWalkInCustomer">
+            <summary>
+            Get Walk In Customer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.Dashboard.DashboardController">
+            <summary>
+            DashboardController
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.#ctor(MediatR.IMediator)">
+            <summary>
+            DashboardController
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.GetDashboardStatistics">
+            <summary>
+            Gets the dashboard statistics.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.GetDailyReminders(System.Int32,System.Int32)">
+            <summary>
+            Gets the daily reminders.
+            </summary>
+            <param name="month">The month.</param>
+            <param name="year">The year.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.GetWeeklyReminders(System.Int32,System.Int32)">
+            <summary>
+            Gets the weekly reminders.
+            </summary>
+            <param name="month">The month.</param>
+            <param name="year">The year.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.GetMonthlyReminders(System.Int32,System.Int32)">
+            <summary>
+            Gets the monthly reminders.
+            </summary>
+            <param name="month">The month.</param>
+            <param name="year">The year.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.GetQuarterlyReminders(System.Int32,System.Int32)">
+            <summary>
+            Gets the quarterly reminders.
+            </summary>
+            <param name="month">The month.</param>
+            <param name="year">The year.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.GetHalfYearlyReminders(System.Int32,System.Int32)">
+            <summary>
+            Gets the half yearly reminders.
+            </summary>
+            <param name="month">The month.</param>
+            <param name="year">The year.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.GetYearlyReminders(System.Int32,System.Int32)">
+            <summary>
+            Gets the yearly reminders.
+            </summary>
+            <param name="month">The month.</param>
+            <param name="year">The year.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.GetOneTimeReminders(System.Int32,System.Int32)">
+            <summary>
+            Get Custom Reminders.
+            </summary>
+            <param name="month"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.BestSellingProduct(System.Int32,System.Int32)">
+            <summary>
+            Get Best Selling Products
+            </summary>
+            <param name="month"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Dashboard.DashboardController.SalesVsPurchase(System.Int32,System.Int32)">
+            <summary>
+            Get Sells vs Purchase Report.
+            </summary>
+            <param name="month"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.EmailTemplate.EmailTemplateController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{POS.API.Controllers.EmailTemplate.EmailTemplateController})">
+            <summary>
+            Role
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:POS.API.Controllers.EmailTemplate.EmailTemplateController.AddEmailTemplate(POS.MediatR.CommandAndQuery.AddEmailTemplateCommand)">
+            <summary>
+            Create  Email Template
+            </summary>
+            <param name="addEmailTemplateCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.EmailTemplate.EmailTemplateController.UpdateAppSetting(System.Guid,POS.MediatR.CommandAndQuery.UpdateEmailTemplateCommand)">
+            <summary>
+            Update Exist AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateEmailTemplateCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.EmailTemplate.EmailTemplateController.GetEmailTemplate(System.Guid)">
+            <summary>
+            Get Email Template By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.EmailTemplate.EmailTemplateController.GetEmailTemplates">
+            <summary>
+            Get All Email Templates
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.EmailTemplate.EmailTemplateController.DelterEmailTemplate(System.Guid)">
+            <summary>
+            Delete Email Template By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Email.EmailController.SendEmail(POS.MediatR.CommandAndQuery.SendEmailCommand)">
+            <summary>
+            Send mail.
+            </summary>
+            <param name="sendEmailCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Email.EmailSMTPSettingController.AddEmailSMTPSetting(POS.MediatR.CommandAndQuery.AddEmailSMTPSettingCommand)">
+            <summary>
+            Create an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Email.EmailSMTPSettingController.GetEmailSMTPSetting(System.Guid)">
+            <summary>
+            Get Email SMTP Configuration.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Email.EmailSMTPSettingController.GetEmailSMTPSettings">
+            <summary>
+            Get Email SMTP Configuration list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Email.EmailSMTPSettingController.UpdateEmailSMTPSetting(System.Guid,POS.MediatR.CommandAndQuery.UpdateEmailSMTPSettingCommand)">
+            <summary>
+            Update an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Email.EmailSMTPSettingController.DeleteEmailSMTPSetting(System.Guid)">
+            <summary>
+            Delete an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ExpenseCategory.ExpenseCategoryController.GetExpenseCategory(System.Guid)">
+            <summary>
+            Get Expense type.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ExpenseCategory.ExpenseCategoryController.ExpenseCategories">
+            <summary>
+            Get Expense Types.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ExpenseCategory.ExpenseCategoryController.AddExpenseCategory(POS.MediatR.CommandAndQuery.AddExpenseCategoryCommand)">
+            <summary>
+            Create Expense Type.
+            </summary>
+            <param name="addExpenseCategoryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ExpenseCategory.ExpenseCategoryController.UpdateExpenseCategory(System.Guid,POS.MediatR.CommandAndQuery.UpdateExpenseCategoryCommand)">
+            <summary>
+            Update Expense Type.
+            </summary>
+            <param name="Id"></param>
+            <param name="updateExpenseCategoryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ExpenseCategory.ExpenseCategoryController.DeleteExpenseCategory(System.Guid)">
+            <summary>
+            Delete Expense Type.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Expense.ExpenseController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:POS.API.Controllers.Expense.ExpenseController.AddExpense(POS.MediatR.CommandAndQuery.AddExpenseCommand)">
+            <summary>
+            Add Expenses
+            </summary>
+            <param name="addExpenseCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Expense.ExpenseController.UpdateExpense(System.Guid,POS.MediatR.CommandAndQuery.UpdateExpenseCommand)">
+            <summary>
+            Update Expense.
+            </summary>
+            <param name="id"></param>
+            <param name="updateExpenseCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Expense.ExpenseController.GetExpenses(POS.Data.Resources.ExpenseResource)">
+            <summary>
+            Get Expenses 
+            </summary>
+            <param name="expenseResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Expense.ExpenseController.GetExpensesReport(POS.Data.Resources.ExpenseResource)">
+            <summary>
+            Get Expenses 
+            </summary>
+            <param name="expenseResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Expense.ExpenseController.GetExpense(System.Guid)">
+            <summary>
+            Gets the Expense by Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Expense.ExpenseController.DeleteExpense(System.Guid)">
+            <summary>
+            Deletes the Expense.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Expense.ExpenseController.DownloadFile(System.Guid)">
+            <summary>
+            Download Receipt
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.FileUpload.FileUploadController.Post(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            Posts the specified files.
+            </summary>
+            <param name="files">The files.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryActivity.InquiryActivityController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="!:InquiryNoteController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryActivity.InquiryActivityController.GetInquiryActivities(System.Guid)">
+            <summary>
+            Gets the Inquiry Activities .
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryActivity.InquiryActivityController.AddInquiryActivity(POS.MediatR.CommandAndQuery.AddInquiryActivityCommand)">
+            <summary>
+            Inserts the Inquiry Activity
+            </summary>
+            <param name="addInquiryActivityCommand">The add Inquiry Note command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryActivity.InquiryActivityController.UpdateInquiryActivity(System.Guid,POS.MediatR.CommandAndQuery.UpdateInquiryActivityCommand)">
+            <summary>
+            Updates the Inquiry Activity By Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="updateInquiryActivityCommand">The update Inquiry By Id command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryActivity.InquiryActivityController.DeleteInquiryActivity(System.Guid)">
+            <summary>
+            Deletes the Inquiry Activity By Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryAttachment.InquiryAttachmentController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{POS.API.Controllers.InquiryAttachment.InquiryAttachmentController},Microsoft.AspNetCore.Hosting.IWebHostEnvironment,POS.Helper.PathHelper)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryAttachment.InquiryAttachmentController.AddInquiryAttachment(POS.MediatR.CommandAndQuery.AddInquiryAttachmentCommand)">
+            <summary>
+            Add Inquiry Inquiry Attachment
+            </summary>
+            <param name="addInquiryAttachmentCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryAttachment.InquiryAttachmentController.GetInquiryAttachmentByInquiryId(System.Guid)">
+            <summary>
+            Get Inquiry Attachements By Id
+            </summary>
+            <param name="inquiryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryAttachment.InquiryAttachmentController.DeleteInquiryAttachment(System.Guid)">
+            <summary>
+            Deletes the inquiry.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryNote.InquiryNoteController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.InquiryNote.InquiryNoteController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryNote.InquiryNoteController.GetInquiryNotes(System.Guid)">
+            <summary>
+            Gets the Inquiry Notes .
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryNote.InquiryNoteController.AddInquiryNote(POS.MediatR.CommandAndQuery.AddInquiryNoteCommand)">
+            <summary>
+            Inserts the Inquiry Note
+            </summary>
+            <param name="addInquiryNoteCommand">The add Inquiry Note command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryNote.InquiryNoteController.UpdateInquiryNote(System.Guid,POS.MediatR.CommandAndQuery.UpdateInquiryNoteCommand)">
+            <summary>
+            Updates the Inquiry Note By Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="updateInquiryNoteCommand">The update Inquiry By Id command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryNote.InquiryNoteController.DeleteInquiryNote(System.Guid)">
+            <summary>
+            Deletes the Inquiry Note By Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquirySource.InquirySourceController.GetInquirySource(System.Guid)">
+            <summary>
+            Get Inquiry Srouce.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquirySource.InquirySourceController.GetInquirySources">
+            <summary>
+            Get Inquiry Srouces.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquirySource.InquirySourceController.AddInquirySource(POS.MediatR.CommandAndQuery.AddInquirySourceCommand)">
+            <summary>
+            Create Inquiry Srouce.
+            </summary>
+            <param name="addInquirySourceCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquirySource.InquirySourceController.UpdateInquirySource(System.Guid,POS.MediatR.CommandAndQuery.UpdateInquirySourceCommand)">
+            <summary>
+            Update Inquiry Source.
+            </summary>
+            <param name="Id"></param>
+            <param name="updateInquirySourceCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquirySource.InquirySourceController.DeleteInquirySource(System.Guid)">
+            <summary>
+            Delete Inquiry Srouce.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryStatusController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.InquiryStatusController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryStatusController.GetAllInquiryStatus">
+            <summary>
+            Get All Inquiry Status.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryStatusController.GetInquiryStatus(System.Guid)">
+            <summary>
+            Get Inquiry status.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryStatusController.AddInquiryStatus(POS.MediatR.CommandAndQuery.AddInquiryStatusCommand)">
+            <summary>
+            Create Inquiry Status.
+            </summary>
+            <param name="addInquiryStatusCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryStatusController.UpdateInquiryStatus(System.Guid,POS.MediatR.CommandAndQuery.UpdateInquiryStatusCommand)">
+            <summary>
+            Update Inquiry status.
+            </summary>
+            <param name="Id"></param>
+            <param name="updateInquiryStatusCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryStatusController.DeleteInquiryStatus(System.Guid)">
+            <summary>
+            Delete Inquiry Status.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.InquiryController">
+            <summary>
+            Inquiry
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{POS.API.Controllers.InquiryController})">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryController.AddInquery(POS.MediatR.CommandAndQuery.AddInquiryCommand)">
+            <summary>
+            Add Inquiry
+            </summary>
+            <param name="addInquiryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryController.UpdateInquiry(System.Guid,POS.MediatR.CommandAndQuery.UpdateInquiryCommand)">
+            <summary>
+            Update Inquiry By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateInquiryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryController.GetInquiries(POS.Data.Resources.InquiryResource)">
+            <summary>
+            Get Inquiry 
+            </summary>
+            <param name="inquiryResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryController.GetInquiry(System.Guid)">
+            <summary>
+            Gets the inquiry by Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryController.DeleteInquiry(System.Guid)">
+            <summary>
+            Deletes the inquiry.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.InquiryController.GetProductsByInquiryId(System.Guid)">
+            <summary>
+            Gets the Products by inquiry Id.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Inventory.InventoryController.GetInventories(POS.Data.InventoryResource)">
+            <summary>
+            Get All Inventory.
+            </summary>
+            <param name="inventoryResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Inventory.InventoryController.AddInventory(POS.MediatR.Inventory.Command.AddInventoryCommand)">
+            <summary>
+            Add Inventory
+            </summary>
+            <param name="addInventoryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Inventory.InventoryController.GetInventoryHistory(POS.Data.Resources.InventoryHistoryResource)">
+            <summary>
+            Get Inventory History.
+            </summary>
+            <param name="inventoryHistoryResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.LoginAudit.LoginAuditController.GetLoginAudit(POS.Data.Resources.LoginAuditResource)">
+            <summary>
+            Get All Login Audit detail
+            </summary>
+            <param name="loginAuditResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.NewsletterSubscriber.NewsletterSubscriberController.CreateNewsletterSubscriber(POS.MediatR.CommandAndQuery.AddNewsletterSubscriberCommand)">
+            <summary>
+            Creates the newsletter subscriber.
+            </summary>
+            <param name="addNewsletterSubscriberCommand">The add newsletter subscriber command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.NLogController.GetNLogs(POS.Data.Resources.NLogResource)">
+            <summary>
+            Get System Logs
+            </summary>
+            <param name="nLogResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.NLogController.GetNLog(System.Guid)">
+            <summary>
+            Get Log By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.NLogController.CreatNLog(POS.MediatR.CommandAndQuery.AddLogCommand)">
+            <summary>
+            Create Log.
+            </summary>
+            <param name="addLogCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.PageController">
+            <summary>
+            Page
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.PageController.#ctor(MediatR.IMediator)">
+            <summary>
+            Page
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:POS.API.Controllers.PageController.GetPage(System.Guid)">
+            <summary>
+            Get Page By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PageController.GetPages">
+            <summary>
+            Get All Pages
+            </summary>
+            <returns>Test</returns>
+            <response code="200">Returns the newly created item</response>
+        </member>
+        <member name="M:POS.API.Controllers.PageController.AddPage(POS.MediatR.CommandAndQuery.AddPageCommand)">
+            <summary>
+            Create a Page
+            </summary>
+            <param name="addPageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PageController.UpdatePage(System.Guid,POS.MediatR.CommandAndQuery.UpdatePageCommand)">
+            <summary>
+            Update Page By Id
+            </summary>
+            <param name="Id"></param>
+            <param name="updatePageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PageController.DeletePage(System.Guid)">
+            <summary>
+            Delete Page By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.ProductCategoryController">
+            <summary>
+            Category Controller
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.ProductCategoryController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:POS.API.Controllers.ProductCategoryController.GetProductCategories(POS.MediatR.CommandAndQuery.GetAllProductCategoriesQuery)">
+            <summary>
+            Get all Product Categories
+            </summary>
+            <param name="getAllProductCategoriesQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ProductCategoryController.GetProductCategory(System.Guid)">
+            <summary>
+            Get Prodct Category.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ProductCategoryController.AddProductCategory(POS.MediatR.Category.Commands.AddProductCategoryCommand)">
+            <summary>
+            Create Product Category.
+            </summary>
+            <param name="addProductCategoryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ProductCategoryController.UpdateProductCategory(System.Guid,POS.MediatR.Category.Commands.UpdateProductCategoryCommand)">
+            <summary>
+            Update Product Category.
+            </summary>
+            <param name="Id"></param>
+            <param name="updateProductCategoryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ProductCategoryController.DeleteProductCategory(System.Guid)">
+            <summary>
+            Delete Product Category.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Product.ProductController.GetProducts(POS.Data.Resources.ProductResource)">
+            <summary>
+            Get All Products.
+            </summary>
+            <param name="productResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Product.ProductController.GetProductByWarehouse">
+            <summary>
+            Get All Products By .
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Product.ProductController.GetProduct(System.Guid)">
+            <summary>
+            Get Product.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Product.ProductController.AddProduct(POS.MediatR.Product.Command.AddProductCommand)">
+            <summary>
+            Add Product.
+            </summary>
+            <param name="addProductCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Product.ProductController.UpdateProduct(System.Guid,POS.MediatR.Product.Command.UpdateProductCommand)">
+            <summary>
+            Update Product.
+            </summary>
+            <param name="updateProductCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Product.ProductController.DeleteProduct(System.Guid)">
+            <summary>
+            Delete Product.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Product.ProductController.GetProductsDetail">
+            <summary>
+            Get Products By Detail
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrderPayment.PurchaseOrderPaymentController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.PurchaseOrderPayment.PurchaseOrderPaymentController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrderPayment.PurchaseOrderPaymentController.GetAllPurchaseOrderPayments(System.Guid)">
+            <summary>
+            Get Purchase Order payments.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrderPayment.PurchaseOrderPaymentController.GetAllPurchaseOrderPaymentsReport(POS.Data.Resources.PurchaseOrderResource)">
+            <summary>
+            Get Purchase Order payments Report.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrderPayment.PurchaseOrderPaymentController.CreatePurchaseOrderPayment(POS.MediatR.PurchaseOrderPayment.Command.AddPurchaseOrderPaymentCommand)">
+            <summary>
+            Create Purchase Order payment.
+            </summary>
+            <param name="addPurchaseOrderPaymentCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrderPayment.PurchaseOrderPaymentController.DeletePurchaseOrderPayment(System.Guid)">
+            <summary>
+            Delete Purchase Order payment.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.PurchaseOrder.PurchaseOrderController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.GetAllPurchaseOrder(POS.Data.Resources.PurchaseOrderResource)">
+            <summary>
+            Gets all purchase order.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.GetAllPurchaseOrderReport(POS.Data.Resources.PurchaseOrderResource)">
+            <summary>
+            Gets all purchase order.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.CreatePurchaseOrder(POS.MediatR.CommandAndQuery.AddPurchaseOrderCommand)">
+            <summary>
+            Creates the purchase order.
+            </summary>
+            <param name="addPurchaseOrderCommand">The add purchase order command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.UpdatePurchaseOrder(System.Guid,POS.MediatR.PurchaseOrder.Commands.UpdatePurchaseOrderCommand)">
+            <summary>
+            Update the purchase order.
+            </summary>
+            <param name="updatePurchaseOrderCommand">The add purchase order command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.UpdatePurchaseOrderReturn(System.Guid,POS.MediatR.PurchaseOrder.Commands.UpdatePurchaseOrderReturnCommand)">
+            <summary>
+            Update the purchase order Return.
+            </summary>
+            <param name="updatePurchaseOrderCommand">The add purchase order command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.DeletePurchaseOrder(System.Guid)">
+            <summary>
+            Delete Purchase Order
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.GetNewPurchaseOrderNumber(System.Boolean)">
+            <summary>
+            Gets the new purchase order number.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.GetPurchaseOrderItems(System.Guid,System.Boolean)">
+            <summary>
+            Get Purchase Order Items.
+            </summary>
+            <param name="id"></param>
+            <param name="isReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.GetPurchaseOrderItems(POS.Data.Resources.PurchaseOrderResource)">
+            <summary>
+            Get Purchase Order Items.
+            </summary>
+            <param name="purchaseOrderResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.GetRecentExpectedDatePurchaseOrder">
+            <summary>
+            Get Recent Expected Date Purchase Order
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.PurchaseOrder.PurchaseOrderController.GetPurchaseOrderProfitLossReport(POS.Data.Resources.PurchaseOrderResource)">
+            <summary>
+            Get Purchase order profit and loss Report
+            </summary>
+            <param name="purchaseOrderResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderSchedulerController.CreateReminderScheduler(POS.MediatR.CommandAndQuery.AddReminderSchedulerCommand)">
+            <summary>
+            Add Reminder Scheduler.
+            </summary>
+            <param name="addReminderSchedulerCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderSchedulerController.GetReminderScheduler(POS.Data.Entities.ApplicationEnums,System.Guid)">
+            <summary>
+            Get Reminder Schedulers.
+            </summary>
+            <param name="application"></param>
+            <param name="referenceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.ReminderController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderController.GetReminders(POS.Data.Resources.ReminderResource)">
+            <summary>
+            Gets the reminders.
+            </summary>
+            <param name="reminderResource">The reminder resource.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderController.CreateReminder(POS.MediatR.CommandAndQuery.AddReminderCommand)">
+            <summary>
+            Creates the reminder.
+            </summary>
+            <param name="addReminderCommand">The add reminder command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderController.GetReminder(System.Guid)">
+            <summary>
+            Gets the reminder.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderController.UpdateReminder(System.Guid,POS.MediatR.CommandAndQuery.UpdateReminderCommand)">
+            <summary>
+            Updates the reminder.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="updateReminderCommand">The update reminder command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderController.DeleteReminder(System.Guid)">
+            <summary>
+            Deletes the reminder.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderController.GetTop10ReminderNotification">
+            <summary>
+            Gets the reminder.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.ReminderController.GetNotifications(POS.Data.Resources.ReminderResource)">
+            <summary>
+            Gets the reminder.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.RoleController">
+            <summary>
+            Role
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.RoleController.#ctor(MediatR.IMediator)">
+            <summary>
+            Role
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:POS.API.Controllers.RoleController.AddRole(POS.MediatR.CommandAndQuery.AddRoleCommand)">
+            <summary>
+            Create A Role
+            </summary>
+            <param name="addRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.RoleController.UpdateRole(System.Guid,POS.MediatR.CommandAndQuery.UpdateRoleCommand)">
+            <summary>
+            Update Exist Role By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.RoleController.GetRole(System.Guid)">
+            <summary>
+            Get Role By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.RoleController.GetRoles">
+            <summary>
+            Get All Roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.RoleController.DeleteRole(System.Guid)">
+            <summary>
+            Delete Role By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.RoleUsersController">
+            <summary>
+            RoleUsers
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.RoleUsersController.#ctor(MediatR.IMediator)">
+            <summary>
+            RoleUsers
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:POS.API.Controllers.RoleUsersController.RoleUsers(System.Guid)">
+            <summary>
+            Get Role Users By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.RoleUsersController.UpdateRoleUsers(System.Guid,POS.MediatR.CommandAndQuery.UpdateUserRoleCommand)">
+            <summary>
+            Update Role Users By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrderPayment.SalesOrderPaymentController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.SalesOrderPayment.SalesOrderPaymentController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrderPayment.SalesOrderPaymentController.GetAllSalesOrderPayments(System.Guid)">
+            <summary>
+            Get Sales Order payments.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrderPayment.SalesOrderPaymentController.CreateSalesOrderPayment(POS.MediatR.SalesOrderPayment.Command.AddSalesOrderPaymentCommand)">
+            <summary>
+            Create Sales Order payment.
+            </summary>
+            <param name="addSalesOrderPaymentCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrderPayment.SalesOrderPaymentController.DeleteSalesOrderPayment(System.Guid)">
+            <summary>
+            Delete Sales Order payment.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrderPayment.SalesOrderPaymentController.GetAllSalesOrderPaymentsReport(POS.Data.Resources.SalesOrderResource)">
+            <summary>
+            Get Purchase Order payments Report.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.SalesOrder.SalesOrderController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.GetAllSalesOrder(POS.Data.Resources.SalesOrderResource)">
+            <summary>
+            Gets all sales order.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.GetSalesOrder(System.Guid)">
+            <summary>
+            Get Sales Order.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.CreateSalesOrder(POS.MediatR.CommandAndQuery.AddSalesOrderCommand)">
+            <summary>
+            Creates the sales order.
+            </summary>
+            <param name="addSalesOrderCommand">The add sales order command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.UpdateSalesOrder(System.Guid,POS.MediatR.SalesOrder.Commands.UpdateSalesOrderCommand)">
+            <summary>
+            Update the Sales order.
+            </summary>
+            <param name="updateSalesOrderCommand">The add Sales order command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.UpdateSalesOrderReturn(System.Guid,POS.MediatR.SalesOrder.Commands.UpdateSalesOrderReturnCommand)">
+            <summary>
+            Update the Sales order return.
+            </summary>
+            <param name="UpdateSalesOrderReturnCommand">The add Sales order command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.DeleteSalesOrder(System.Guid)">
+            <summary>
+            Delete Sales Order
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.GetNewSalesOrderNumber">
+            <summary>
+            Gets the new Sales order number.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.GetSalesOrderItems(System.Guid,System.Boolean)">
+            <summary>
+            Get Sales order Items
+            </summary>
+            <param name="id"></param>
+            <param name="isReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.GetSalesOrderItems(POS.Data.Resources.SalesOrderResource)">
+            <summary>
+            Get Sales Item report.
+            </summary>
+            <param name="salesOrderResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.GetRecentExpectedShipmentDateSalesOrder">
+            <summary>
+            Get Recent Shipment.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SalesOrder.SalesOrderController.GetSalesOrderProfitLossReport(POS.Data.Resources.SalesOrderResource)">
+            <summary>
+            Get Sales order profit and loss Report.
+            </summary>
+            <param name="salesOrderResource"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.SendEmailController">
+            <summary>
+            Supplier Controller
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.SendEmailController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{POS.API.Controllers.SendEmailController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.SendEmailController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.SendEmailController.SendEmailSuppliers(POS.MediatR.CommandAndQuery.AddSendEmailSuppliersCommand)">
+            <summary>
+            Get All Suppliers
+            </summary>
+            <param name="supplierResource"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.SupplierController">
+            <summary>
+            Supplier Controller
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.SupplierController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{POS.API.Controllers.SupplierController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.SupplierController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.SupplierController.GetSuppliers(POS.Data.Resources.SupplierResource)">
+            <summary>
+            Get All Suppliers
+            </summary>
+            <param name="supplierResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SupplierController.GetSupplier(System.Guid)">
+            <summary>
+            Get Supplier by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SupplierController.AddSupplier(POS.MediatR.CommandAndQuery.AddSupplierCommand)">
+            <summary>
+            Add Supplier
+            </summary>
+            <param name="addSupplierCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SupplierController.UpdateSupplier(System.Guid,POS.MediatR.CommandAndQuery.UpdateSupplierCommand)">
+            <summary>
+            Update Supplier By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateSupplierCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SupplierController.DeleteSupplier(System.Guid)">
+            <summary>
+            Delete Supplier By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SupplierController.GetNewSupplier">
+            <summary>
+            Get Latest Register Suppliers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.SupplierController.GetSupplierPayment(POS.Data.Resources.SupplierResource)">
+            <summary>
+            Get Supplier Payment.
+            </summary>
+            <param name="supplierResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Supplier.SupplierSearchController.#ctor(MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:POS.API.Controllers.Supplier.SupplierSearchController"/> class.
+            </summary>
+            <param name="mediator">The mediator.</param>
+        </member>
+        <member name="M:POS.API.Controllers.Supplier.SupplierSearchController.SearchSuppliers(System.String,System.Int32)">
+            <summary>
+            Searches the suppliers.
+            </summary>
+            <param name="searchQuery">The search query.</param>
+            <param name="pageSize">Size of the page.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Tax.TaxController.GetTax(System.Guid)">
+            <summary>
+            Get Tax.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Tax.TaxController.GetTaxes">
+            <summary>
+            Get Tax.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Tax.TaxController.AddTax(POS.MediatR.Tax.Commands.AddTaxCommand)">
+            <summary>
+            Create Tax.
+            </summary>
+            <param name="addTaxCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Tax.TaxController.UpdateTax(System.Guid,POS.MediatR.Tax.Commands.UpdateTaxCommand)">
+            <summary>
+            Update Tax.
+            </summary>
+            <param name="Id"></param>
+            <param name="updateTaxCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Tax.TaxController.DeleteTax(System.Guid)">
+            <summary>
+            Delete Tax.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Testimonials.TestimonialsController.GetTestimonials">
+            <summary>
+            Gets the testimonials.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Testimonials.TestimonialsController.AddTestimonial(POS.MediatR.CommandAndQuery.AddTestimonialsCommand)">
+            <summary>
+            Adds the testimonial.
+            </summary>
+            <param name="testimonialsCommand">The testimonials command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Testimonials.TestimonialsController.UpdateTestimonial(System.Guid,POS.MediatR.CommandAndQuery.UpdateTestimonialsCommand)">
+            <summary>
+            Updates the testimonial.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="updateTestimonialsCommand">The update testimonials command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Testimonials.TestimonialsController.GetTestimonial(System.Guid)">
+            <summary>
+            Gets the testimonial.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Testimonials.TestimonialsController.DeleteTestimonial(System.Guid)">
+            <summary>
+            Deletes the testimonial.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.UnitConversation.UnitConversationController">
+            <summary>
+            Category Controller
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.UnitConversation.UnitConversationController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:POS.API.Controllers.UnitConversation.UnitConversationController.GetUnitConversations(POS.MediatR.UnitConversation.Commands.GetAllUnitConversationCommand)">
+            <summary>
+            Get all Unit Conversation
+            </summary>
+            <param name="getAllUnitConversationCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UnitConversation.UnitConversationController.AddUnitConversation(POS.MediatR.UnitConversation.Commands.AddUnitConversationCommand)">
+            <summary>
+            Create Unit Conversation
+            </summary>
+            <param name="addUnitConversationCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UnitConversation.UnitConversationController.UpdateUnitConversation(System.Guid,POS.MediatR.UnitConversation.Commands.UpdateUnitConversationCommand)">
+            <summary>
+            Update Unit Conversation
+            </summary>
+            <param name="Id"></param>
+            <param name="updateUnitConversationCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UnitConversation.UnitConversationController.DeleteUnitConversation(System.Guid)">
+            <summary>
+             Delete Unit Conversation
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UnitConversation.UnitConversationController.GetUnitConversations(POS.MediatR.UnitConversation.Commands.GetAllBaseUnitConversationCommand)">
+            <summary>
+            
+            </summary>
+            <param name="getAllBaseUnitConversationCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.UserClaimController">
+            <summary>
+            UserClaim
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.UserClaimController.#ctor(MediatR.IMediator)">
+            <summary>
+            UserClaim
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:POS.API.Controllers.UserClaimController.UpdateUserClaim(System.Guid,POS.MediatR.CommandAndQuery.UpdateUserClaimCommand)">
+            <summary>
+            Update User Claim By Id
+            </summary>
+            <param name="id"></param>
+            <param name="addUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Controllers.UserController">
+            <summary>
+            User
+            </summary>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.#ctor(MediatR.IMediator,POS.Data.Dto.UserInfoToken)">
+            <summary>
+            User
+            </summary>
+            <param name="mediator"></param>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.AddUser(POS.MediatR.CommandAndQuery.AddUserCommand)">
+            <summary>
+             Create a User
+            </summary>
+            <param name="addUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.GetAllUsers">
+            <summary>
+            Get All Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.GetUser(System.Guid)">
+            <summary>
+            Get User By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.GetUserNotificationCount">
+            <summary>
+            Get Use Notification Coung.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.GetUsers(POS.Data.Resources.UserResource)">
+            <summary>
+            Get Users
+            </summary>
+            <param name="userResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.GetRecentlyRegisteredUsers">
+            <summary>
+            Get Recently Registered Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.UpdateUser(System.Guid,POS.MediatR.CommandAndQuery.UpdateUserCommand)">
+            <summary>
+            Update User By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.UpdateUserProfile(POS.MediatR.CommandAndQuery.UpdateUserProfileCommand)">
+            <summary>
+            Update Profile
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserProfileCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.UpdateUserProfilePhoto">
+            <summary>
+            Update Profile photo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.DeleteUser(System.Guid)">
+            <summary>
+            Delete User By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.ChangePassword(POS.MediatR.CommandAndQuery.ChangePasswordCommand)">
+            <summary>
+            User Change Password
+            </summary>
+            <param name="resetPasswordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.ResetPassword(POS.MediatR.CommandAndQuery.ResetPasswordCommand)">
+            <summary>
+            Reset Resetpassword
+            </summary>
+            <param name="newPasswordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.UserController.GetProfile">
+            <summary>
+            Get User Profile
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Warehouse.WarehouseController.GetWarehouse(System.Guid)">
+            <summary>
+            Get Warehouse.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Warehouse.WarehouseController.GetWarehousesByProductId(System.Guid)">
+            <summary>
+            Get Warehouse.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Warehouse.WarehouseController.GetWarehouses">
+            <summary>
+            Get Warehouses.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Warehouse.WarehouseController.AddWarehouse(POS.MediatR.Warehouse.Commands.AddWarehouseCommand)">
+            <summary>
+            Create Warehouse.
+            </summary>
+            <param name="addWarehouseCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Warehouse.WarehouseController.UpdateWarehouse(System.Guid,POS.MediatR.Warehouse.Commands.UpdateWarehouseCommand)">
+            <summary>
+            Update Warehouse.
+            </summary>
+            <param name="Id"></param>
+            <param name="updateWarehouseCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Warehouse.WarehouseController.DeleteWarehouse(System.Guid)">
+            <summary>
+            Delete Warehouse.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:POS.API.Controllers.Warehouse.WarehouseController.GetWarehouseProductItems(System.Guid)">
+            <summary>
+            get Warehouse Product.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:POS.API.Helpers.Mapping.ActionProfile">
+            <summary>
+            Action Profiler
+            </summary>
+        </member>
+        <member name="M:POS.API.Helpers.Mapping.ActionProfile.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:POS.API.Helpers.Mapping.TaxProfile.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:POS.API.Helpers.Mapping.UnitProfile.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:POS.API.Helpers.Mapping.WarehouseProfile.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:POS.API.Helpers.SupplierProfile">
+            <summary>
+            Supplier Mapper for Autommaper
+            </summary>
+        </member>
+        <member name="M:POS.API.Helpers.SupplierProfile.#ctor">
+            <summary>
+            Supplier Mapper for Autommaper
+            </summary>
+        </member>
+    </members>
+</doc>
