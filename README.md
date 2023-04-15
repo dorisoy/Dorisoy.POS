@@ -97,6 +97,14 @@
 用户名：employee@pos.com 密码：employee@123
 
 
+# 屏幕
+
+<img src="https://github.com/dorisoy/Dorisoy.POS/blob/main/Screen/sc%20(1).png">
+<img src="https://github.com/dorisoy/Dorisoy.POS/blob/main/Screen/sc%20(2).png">
+<img src="https://github.com/dorisoy/Dorisoy.POS/blob/main/Screen/sc%20(3).png">
+<img src="https://github.com/dorisoy/Dorisoy.POS/blob/main/Screen/sc%20(4).png">
+<img src="https://github.com/dorisoy/Dorisoy.POS/blob/main/Screen/sc%20(5).png">
+
 # .Net Core安装
 
 ## 先决条件
