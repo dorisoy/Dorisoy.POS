@@ -264,6 +264,7 @@ sudo apt-get install zip
 ```
 
 **步骤5:** 从MySQLProviderBuild或SqlServerProviderBuild的Build文件夹复制所有文件和文件夹，并粘贴到/var/www/｛｛yourwebsitename｝｝
+
 **步骤6:** 创建linux自定义服务，遵循以下步骤：
 
 ```shell
