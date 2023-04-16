@@ -240,15 +240,16 @@ C:\inetpub\wwwroot\{{yoursitename}}
 将C:\inetpub\wwwroot\｛｛yoursitename｝｝文件夹路径复制到物理路径。
 
 ## Linux服务器上的主机（nginx）：
-步骤1:Intall.Net Core 6在Linux上安装.Net Core 6
-步骤2：进气发动机
+
+**步骤1:** Intall.Net Core 6在Linux上安装.Net Core 6
+**步骤2：** 进气发动机
 
 ```shell
 sudo apt update
 sudo apt install nginx
 ```
 
-步骤：3安装MySQL
+**步骤：3** 安装MySQL
 
 ```shell
 sudo apt update
@@ -256,14 +257,14 @@ sudo apt install mysql-server
 sudo systemctl start mysql.service
 ```
 
-步骤：4安装zip
+**步骤：4** 安装zip
 
 ```shell
 sudo apt-get install zip
 ```
 
-步骤：5从MySQLProviderBuild或SqlServerProviderBuild的Build文件夹复制所有文件和文件夹，并粘贴到/var/www/｛｛yourwebsitename｝｝
-步骤：6创建linux自定义服务，遵循以下步骤：
+**步骤：5** 从MySQLProviderBuild或SqlServerProviderBuild的Build文件夹复制所有文件和文件夹，并粘贴到/var/www/｛｛yourwebsitename｝｝
+**步骤：6** 创建linux自定义服务，遵循以下步骤：
 
 ```shell
 cd /etc/systemd/system
@@ -309,7 +310,7 @@ sudo systemctl status your-service.service
 
 [Host ASP.NET Core on Linux with Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-7.0)
 
-步骤：7 配置Nginx反向代理
+**步骤：7 ** 配置Nginx反向代理
 
 ```shell
 cd /etc/nginx/sites-available
