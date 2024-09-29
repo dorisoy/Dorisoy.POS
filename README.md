@@ -86,7 +86,7 @@
 
 # 演示地址
 
-[http://pos.dorisoy.com/](http://pos.dorisoy.com/)
+[http://pos.doriso.cn/](http://pos.doriso.cn/)
 
 ## 测试账户
 
