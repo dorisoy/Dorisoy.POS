@@ -87,11 +87,15 @@
 # 演示地址
 
 [http://pos.doriso.cn/](http://pos.doriso.cn/)
+[http://pos.doriso.cn/](http://pos.xamarin.top/)
 
 ## 测试账户
 
 用户名：admin@gmail.com  密码：admin@123
 用户名：employee@gmail.com 密码：employee@123
+
+
+
 
 
 # 屏幕
